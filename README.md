@@ -17,4 +17,4 @@
             - criação do arquivo global.css -> para os estilos globais
         - criação da pasta js
             - criação do arquivo main.js
-- mobile first
+- mobile first: para não ter que rescrever muito codigo
