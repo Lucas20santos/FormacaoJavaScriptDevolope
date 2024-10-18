@@ -1,13 +1,17 @@
-const pessoa = {
-    genero: "masculino"
+function Pessoa(nome, idade)
+{
+    this.nome = nome
+    this.idade = idade
+}
+Pessoa.prototype.falar = function () 
+{
+    console.log(`Meu não é: ${this.nome}`)
 }
 
-const documentos = {
-    cpf: '000.000.000-00'
+const lucas = {
+    geneero: "masculino"
 }
 
-const lucas = Object.create(pessoa, documentos)
-
-lucas.nome = "Lucas"
+Pessoa.call(lucas, "nome", 32)
 
 console.log(lucas)
