@@ -78,3 +78,91 @@ uma instância para usarmos ele para ficar mais fácil a busca por alguns atribu
 ### Criação de botão
 
 Foi criado um botão para inserir mais card na página.
+
+### Curso avança do JavaScript
+
+#### Variáveis
+
+    - Fracamente tipado
+    - case sensivel
+    - os tipos serão convertido de acordo com o contexto
+
+##### Exemplo
+
+`
+
+    var var1 = 10;
+    var var2 = '20'
+
+    console.log(var1 - var2) 
+`
+
+##### resultado
+
+`
+
+    node variaveis.js
+    -10
+`
+
+##### Comentário
+
+como o operador é aritmetrico, o javascript vai tentar converter o var2 para um tipo númerico para depois fazer a operação
+
+
+##### Exemplo
+
+`
+
+    var var1 = 2;
+    var var2 = 'string'
+
+    console.log(var1 + var2) 
+`
+
+##### resultado
+
+`
+
+    node variaveis.js
+    2string
+`
+
+##### Comentário
+
+O javascript vai converter o 2 para um tipo string e 
+depois fazer a operação de concatenação com o valor da 
+outra váriavel
+
+#### Hoisting
+
+- Issamento é o comportamento de jogar para o inicio do 
+programa todas as várias "var" e funções, mas não sua 
+inicialização.
+
+#### Escopos e diferenca de var, let e const
+
+- Variáveis do tipo var se mantém ao escopo global e ao 
+escopo de funções
+- Variávies do tipo let e const não sofre hoisting e se 
+mantem dentro do escopo local
+- Variáveis do tipo const não sofre alteração para tipo 
+primitivos
+
+#### Tipos de dados
+- Wrappers 
+    - Classes que representam o mesmo tipo de dados
+- Coersão de tipos
+    - Ele converte os valores para o mesmo tipo para poder fazer as operações de forma coesa
+- Boolean
+- Null
+    - Ausencia de valor
+- Undefined
+    - Ausencia de declaração
+- String
+- symbol
+- Objetos
+    - É uma coleção dinâmica de chave e valor
+    
+Não é possível mudar o tipo de uma variável de tipo 
+primitivo.
