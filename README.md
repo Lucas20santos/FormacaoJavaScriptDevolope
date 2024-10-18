@@ -69,3 +69,12 @@
 
 Separando arquivos de manipulação do HTML em teste-main.js e arquivo de consulmo de API em 
 teste-pokemon-api.js
+
+### Crindo um modelo
+
+Foi criado um modelo seperado para criar uma classe que severia de modelo para nosso projeto. Foi criado 
+uma instância para usarmos ele para ficar mais fácil a busca por alguns atributos.
+
+### Criação de botão
+
+Foi criado um botão para inserir mais card na página.
