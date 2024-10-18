@@ -3,10 +3,10 @@ const pokeApi = {}
 function convertPokeApiDetailsPokemon(pokemonDetail)
 {
     const pokemon = new Pokemon()
-    pokemon.number = pokemonDetail.order
+    pokemon.number = pokemonDetail.id
     pokemon.name = pokemonDetail.name
-    pokemon.types = pokemonDetail.types.map((types) => types.type.name).join(' ')
-    pokemon.type = pokemon.types.split(' ')[0]
+    pokemon.types = pokemonDetail.types.map((types) => types.type.name)
+    pokemon.type = pokemon.types[0]
     pokemon.photo = pokemonDetail.sprites.other.dream_world.front_default
 
     return pokemon
