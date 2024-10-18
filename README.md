@@ -65,3 +65,7 @@
 - Foi criado uma função que retorna uma estrutura de <li>
 - através dos dados coletados da API foi passado o nome do pokemon de forma dinamica
 
+### Organizando o codigo
+
+Separando arquivos de manipulação do HTML em teste-main.js e arquivo de consulmo de API em 
+teste-pokemon-api.js
