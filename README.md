@@ -181,3 +181,12 @@ primitivo.
 - closures ou fechamento
     - As funções se lembram do contexto que foi declarada.
 - Com os metodos .apply() e .call() conseguimos passar um contexto para a função
+
+#### Lista no JavScript
+
+- Pasta exemplos-code/teste10.js
+- forEach()
+- filter
+- map
+- reduce
+- join e combinação de funções de manipulações
