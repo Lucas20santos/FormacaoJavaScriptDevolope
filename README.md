@@ -180,4 +180,4 @@ primitivo.
     - Arrow function não tem um contexto não tem o this, logo o objeto não assume o contexto da arrow function.
 - closures ou fechamento
     - As funções se lembram do contexto que foi declarada.
-
+- Com os metodos .apply() e .call() conseguimos passar um contexto para a função
