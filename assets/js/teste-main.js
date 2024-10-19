@@ -30,7 +30,7 @@ function loadPokemonItem(offset, limit)
 
 loadPokemonItem(offset, limit)
 
-loadMorePokemon.addEventListener('click', () => 
+loadMorePokemon.addEventListener('click', () =>  
 {
     offset += limit
     loadPokemonItem(offset, limit)
