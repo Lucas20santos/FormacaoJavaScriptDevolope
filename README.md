@@ -166,3 +166,13 @@ primitivos
     
 Não é possível mudar o tipo de uma variável de tipo 
 primitivo.
+
+#### Funções
+
+##### Função de primeira classe e Função de alto nível
+
+    - Podemos passar uma função para um variável
+    - Podemos passar uma função como parâmetro de outra função
+    - Podemos retornar outra função
+    - function declaration vai sofre o hoisting, enquando a function expression não sofrerá o hoisting
+        - Isso significa que a declaração sofre o hoisting, mas a atribuição não.
