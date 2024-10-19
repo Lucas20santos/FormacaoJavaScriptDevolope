@@ -171,8 +171,13 @@ primitivo.
 
 ##### Função de primeira classe e Função de alto nível
 
-    - Podemos passar uma função para um variável
-    - Podemos passar uma função como parâmetro de outra função
-    - Podemos retornar outra função
-    - function declaration vai sofre o hoisting, enquando a function expression não sofrerá o hoisting
-        - Isso significa que a declaração sofre o hoisting, mas a atribuição não.
+- Podemos passar uma função para um variável
+- Podemos passar uma função como parâmetro de outra função
+- Podemos retornar outra função
+- function declaration vai sofre o hoisting, enquando a function expression não sofrerá o hoisting
+    - Isso significa que a declaração sofre o hoisting, mas a atribuição não.
+- Quando uma função está dentro de um objeto, ela assume o contexto do objeto.
+    - Arrow function não tem um contexto não tem o this, logo o objeto não assume o contexto da arrow function.
+- closures ou fechamento
+    - As funções se lembram do contexto que foi declarada.
+
