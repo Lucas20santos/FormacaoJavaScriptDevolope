@@ -1,0 +1,61 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.header .descricao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .descricao .photo
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.header .descricao .titulo
+{
+    text-align: center;
+}
+.header .information
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.header .information .job,
+.header .information .location,
+.header .information .phone,
+.header .information .email
+{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.header .information .job img,
+.header .information .location img,
+.header .information .phone img,
+.header .information .email img
+{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.header .information .job p,
+.header .information .location p,
+.header .information .phone p,
+.header .information .email p
+{
+    margin-left: .8rem;
+    font-weight: 600;
+    font-size: larger;
+    font-size: 1.125rem;
+}
+

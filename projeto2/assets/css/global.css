@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body
+{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(100,70,252,0.9780287114845938) 100%);
+    color: white;
+}
+.main
+{
+    padding: .5rem;
+    border-radius: 1rem;
+    height: 100vh; 
+}
+
