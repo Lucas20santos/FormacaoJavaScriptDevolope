@@ -1,18 +1,31 @@
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 1px white;
-    border-radius: 1rem;
-    padding: 1rem;
-}
-.header .descricao
+.header
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
 }
-.header .descricao .photo
+.header::after
+{
+    content: '';
+    display: inline-block;
+    background-image: url("../img/header.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.header .imagem
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .imagem .photo
 {
     width: 200px;
     height: 200px;
@@ -22,79 +35,71 @@
 {
     text-align: center;
 }
-.header .information
+.header .descricao .information
 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     width: 100%;
 }
 
-.header .information .job,
-.header .information .location,
-.header .information .phone,
-.header .information .email
+.header .descricao .information .job,
+.header .descricao .information .location,
+.header .descricao .information .phone,
+.header .descricao .information .email
 {
     display: flex;
     align-items: center;
-    margin: 0;
 }
-.header .information .job img,
-.header .information .location img,
-.header .information .phone img,
-.header .information .email img
+.header .descricao .information .job img,
+.header .descricao .information .location img,
+.header .descricao .information .phone img,
+.header .descricao .information .email img
 {
     width: 20px;
     height: 20px;
-    margin: 0;
+    margin-right: 10px;
 }
-.header .information .job h1,
-.header .information .location h1,
-.header .information .phone h1,
-.header .information .email h1
+.header .descricao .information .job p,
+.header .descricao .information .location p,
+.header .descricao .information .phone p,
+.header .descricao .information .email p
 {
-    margin-left: .8rem;
-    font-weight: 600;
-    font-size: larger;
-    font-size: 1.125rem;
-}
 
+    font-weight: 100;;
+    font-size: 1rem;
+}
 @media only screen and (min-width: 768px)
 {
     .header
-    {   
-        flex-direction: column;
-        height: 100vh;
+    {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .header .imagem
+    {
+        width: 30%;
     }
     .header .descricao
     {
-        flex-direction: row;
-    }
-    .header .descricao img
-    {
-        margin-right: 20px;
+        width: 50%;
     }
     .header .descricao .titulo
     {
-        width: 200px;
+
+        font-size: .8rem;
         font-weight: 100;
-    }
-    .header .information
-    {
+        text-align: start;
+        height: 120px;
         width: 200px;
-        flex-direction: column;
-        position: absolute;
-        top: 226px;
-        left: 450px;
-
     }
-    .header .information .job img,
-    .header .information .location img,
-    .header .information .phone img,
-    .header .information .email img
-    {
-        margin-right: 10px;
-    }
-        
+    
 }
-
+@media only screen and (min-width: 900px)
+{
+    .header .descricao .titulo
+    {
+        font-size: 18px;
+        font-weight: 100;
+        text-align: start;
+        height: 150px;
+        width: 300px;
+    }
+}

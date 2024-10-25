@@ -1,21 +1,68 @@
-*{
+*
+{
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-}
-.titulo{
-    font-family: 'Neue Machina';
-    src: url('../fonts/neue-machina-regular.otf');
 }
 body
 {
     color: white;
     background-color: black;
 }
-
+body::before
+{   
+    content: '';
+    background-image: url("../img/background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+body::after
+{   
+    content: '';
+    background-image: url("../img/background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+.header .descricao .titulo
+{
+    font-family: 'Neue Machina';
+    src: url('../fonts/neue-machina-regular.otf');
+}
 .main
 {
     padding: .5rem;
     border-radius: 1rem;
     height: 100vh;
+    z-index: 1;
+    border: solid 1px white;
 }
-
+@media only screen and (min-width: 768px)
+{
+    body::before
+    {
+        width: 900px;
+        height: 900px;
+    }
+    body::after
+    {
+        width: 900px;
+        height: 900px;
+    }
+    .main
+    {
+        max-width: 1024px;
+        margin: 0 auto;
+    }    
+}
