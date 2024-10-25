@@ -48,14 +48,53 @@
     height: 20px;
     margin: 0;
 }
-.header .information .job p,
-.header .information .location p,
-.header .information .phone p,
-.header .information .email p
+.header .information .job h1,
+.header .information .location h1,
+.header .information .phone h1,
+.header .information .email h1
 {
     margin-left: .8rem;
     font-weight: 600;
     font-size: larger;
     font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .header
+    {   
+        flex-direction: column;
+        height: 100vh;
+    }
+    .header .descricao
+    {
+        flex-direction: row;
+    }
+    .header .descricao img
+    {
+        margin-right: 20px;
+    }
+    .header .descricao .titulo
+    {
+        width: 200px;
+        font-weight: 100;
+    }
+    .header .information
+    {
+        width: 200px;
+        flex-direction: column;
+        position: absolute;
+        top: 226px;
+        left: 450px;
+
+    }
+    .header .information .job img,
+    .header .information .location img,
+    .header .information .phone img,
+    .header .information .email img
+    {
+        margin-right: 10px;
+    }
+        
 }
 
