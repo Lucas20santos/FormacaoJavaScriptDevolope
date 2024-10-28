@@ -18,7 +18,7 @@
     <!-- Estilos da pagina -->
     <link rel="stylesheet" href="../projeto2/assets/css/header.css">
     <link rel="stylesheet" href="../projeto2/assets/css/global.css">
-    <link rel="stylesheet" href="../projeto2/assets/css/seccao.css">
+    <link rel="stylesheet" href="../projeto2/assets/css/acordeon.css">
 
 </head>
 <body>
@@ -56,16 +56,24 @@
 
         <div class="secao-dados">
             <section>
-                <div class="skill">
-                    <button class="skill-button">
-                        <h2 class="skill-texto">Skill</h2>
-                        <img class="skill-img" src="./assets/img/arrow-top.svg" alt="Seta para cima">
+                <div class="acordeon open">
+                    <button class="trigger" type="button">
+                        Idiomas
                     </button>
+                    <div class="content">
+                        <ul>
+                            <li>Português</li>
+                            <li>Inglês</li>
+                            <li>Italiano</li>
+                            <li>Espanhol</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
 
-    
+
+    <script src="./assets/js/acordeon.js"></script>
 </body>
 </html>
