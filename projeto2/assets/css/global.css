@@ -45,8 +45,7 @@ body::after
     margin: 1rem;
     padding: .5rem;
     border-radius: 1rem;
-    height: 100vh;
-    z-index: 1;
+    z-index: 0;
     border: solid 1px white;
 }
 @media only screen and (min-width: 768px)

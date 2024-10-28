@@ -39,6 +39,12 @@
 {
     width: 100%;
 }
+.header .descricao .information a
+{
+    color: white;
+    text-decoration: none;
+}
+
 
 .header .descricao .information .job,
 .header .descricao .information .location,
