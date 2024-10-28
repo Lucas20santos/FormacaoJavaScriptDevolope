@@ -38,6 +38,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url("../img/arrow-top.svg");
+    transition: 0.25s;
 }
 .acordeon .trigger:hover
 {
@@ -47,11 +48,16 @@
 {
     transform: rotate(180deg);
 }
+.acordeon .content
+{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
 .acordeon.open .content
 {
     display: inline-block;
-}
-.acordeon .content
-{
-    display: none;
+    height: auto;
+    opacity: 1;
 }
