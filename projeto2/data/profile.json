@@ -1,0 +1,71 @@
+{
+    "name": "Lucas S Santos",
+    "photo": "https://avatars.githubusercontent.com/u/86927326?v=4",
+    "job": "Estudante",
+    "location": "Refice - PE",
+    "phone": "(81) 991295670",
+    "email": "lucas210souza@gmial.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "Node",
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/nodejs.png"
+        },
+        {
+          "name": "Python",
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/python.png"
+        },
+        {
+          "name": "CSS",
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/css.png"
+        },
+        {
+          "name": "React",
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/react.png"
+        },
+        {
+          "name": "Html",
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/html.png"
+        },
+        {
+          "name": "Postgresql",
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/postgresql.png"
+        }
+      ],
+      "softSkills": [
+        "Empatia",
+        "Inteligência emocional",
+        "Trabalho em equipe",
+        "Flexibilidade"
+      ]
+    },
+    "languages": [
+      "Português BR",
+      "Inglês (Básico)",
+      "Espanhol (Básico)"
+    ],
+    "portfolio": [
+      {
+        "name": "Criação de uma Pokedex",
+        "url": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto1",
+        "github": true
+      },
+      {
+        "name": "Criação de uma página de portfolio",
+        "url": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2",
+        "github": true
+      }
+    ],
+    "professionalExperience": [
+      {
+        "name": "Estagio na Jeep/Stellantis",
+        "period": "Set 2022 até Out de 2024",
+        "description": "Foi uma experiência profissional bastante valiosa poder aprender e me qualificar trabalhando ao lado de vários profissionais competentes."
+      },
+      {
+        "name": "Iniciação ciêntifica - Criação de controle de acesso",
+        "period": "Jan 2020 até Set 2020",
+        "description": "Pude aprender através de um projeto prático tecnologias com react e node js"
+      }
+    ]
+  }
