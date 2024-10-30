@@ -23,9 +23,27 @@ function updateProfileData(profileData)
     email.href = `mailto:${profileData.email}`
 }
 
+function updateProfileSkill(profileData)
+{
+    const skills = document.getElementById("profile.skills")
+    const arrayOfSkills = profileData.skills.hardSkills
+
+    for (let index = 0; index < arrayOfSkills.length; index++) {
+        const element = arrayOfSkills[index];
+        console.log(element.logo)
+        // skills.innerHTML += `
+    //     <li>
+    //         <img src="${element.logo}" alt="${profileData.skills.hardSkills.name}" title="HTML">
+    //     </li>
+    // `
+    }
+
+    console.log(profileData.skills.hardSkills)
+}
 
 
 (async () => {
     const profileData = await feactProfileData()
     updateProfileData(profileData)
+    updateProfileSkill(profileData)
 })()

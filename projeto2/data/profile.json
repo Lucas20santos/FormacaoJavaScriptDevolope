@@ -8,10 +8,6 @@
     "skills": {
       "hardSkills": [
         {
-          "name": "Node",
-          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/nodejs.png"
-        },
-        {
           "name": "Python",
           "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/python.png"
         },
@@ -26,10 +22,6 @@
         {
           "name": "Html",
           "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/html.png"
-        },
-        {
-          "name": "Postgresql",
-          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/postgresql.png"
         }
       ],
       "softSkills": [
