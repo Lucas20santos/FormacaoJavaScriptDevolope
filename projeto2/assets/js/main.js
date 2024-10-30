@@ -106,10 +106,10 @@ function updateProfileMyExperience(profileData)
 
 }
 
-function logoDio()
+function logoDio(profileData)
 {
     const logoDio = document.getElementById("logo-dio")
-    logoDio.src = "https://raw.githubusercontent.com/Lucas20santos/FormacaoJavaScriptDevolope/ef26a74056156a679ce41033864b61e02b93629a/projeto2/assets/img/dio.svg"
+    logoDio.src = profileData.logoDio
     logoDio.alt = "logo da DIO"
     logoDio.title = "Logo da DIO"
 }
@@ -124,5 +124,5 @@ function logoDio()
     updateProfileEducation(profileData)
     updateProfilePortfolio(profileData)
     updateProfileMyExperience(profileData)
-    logoDio()
+    logoDio(profileData)
 })()
