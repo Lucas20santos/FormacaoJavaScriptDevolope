@@ -5,8 +5,3 @@ async function feactProfileData()
     console.log(fetching)
     return await fetching.json()
 }
-
-(async () => {
-    const profileData = await feactProfileData()
-    console.log(profileData)
-})()

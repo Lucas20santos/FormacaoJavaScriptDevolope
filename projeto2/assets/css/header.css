@@ -53,6 +53,7 @@
 {
     display: flex;
     align-items: center;
+    height: 3rem;
 }
 .header .descricao .information .job img,
 .header .descricao .information .location img,
