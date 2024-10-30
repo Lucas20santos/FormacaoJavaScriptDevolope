@@ -35,5 +35,9 @@
 .experience li .descricao
 {
     display: flex;
+    margin: 0;
+    padding-top: 0;
+    text-align: justify;
+    padding-bottom: 1rem;
     font-size: 1.125rem;
 }

@@ -34,7 +34,7 @@ function updateProfileSkill(profileData)
         
         skills.innerHTML += `
         <li>
-            <img src='https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/python.png?raw=true' alt="${element.name}" title="${element.name}">
+            <img src='${element.logo}' alt="${element.name}" title="${element.name}">
         </li>
         `
     }
@@ -89,7 +89,21 @@ function updateProfilePortfolio(profileData)
 
 function updateProfileMyExperience(profileData)
 {
+    const myExperience = document.getElementById("profile.experience")
+    const arrayOfMyExperience = profileData.professionalExperience
     
+    for (let index = 0; index < arrayOfMyExperience.length; index++) 
+    {
+        const element = arrayOfMyExperience[index];
+        myExperience.innerHTML += `
+            <li>
+                <span class="title">${element.name}</span>
+                <span class="period">${element.period}</span>
+                <span class="descricao">${element.description}</span>
+            </li>        
+        `
+    }
+
 }
 
 (async () => 
@@ -101,5 +115,5 @@ function updateProfileMyExperience(profileData)
     updateProfileSoftSkill(profileData)
     updateProfileEducation(profileData)
     updateProfilePortfolio(profileData)
-    // updateProfileMyExperience(profileData)
+    updateProfileMyExperience(profileData)
 })()
