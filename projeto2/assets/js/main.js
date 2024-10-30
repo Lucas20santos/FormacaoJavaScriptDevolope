@@ -70,10 +70,28 @@ function updateProfileEducation(profileData)
     }
 }
 
+function updateProfilePortfolio(profileData)
+{
+    const portfolio = document.getElementById("profile.portfolio")
+    const arrayOfPortfolio = profileData.portfolio
+
+    for (let index = 0; index < arrayOfPortfolio.length; index++) 
+    {
+        const element = arrayOfPortfolio[index];
+        portfolio.innerHTML += `
+            <li>
+                <span class="title github">${element.name}</span>
+                <a href="${element.url}" target="_blank">${element.url}</a>
+            </li>
+        `    
+    }
+}
+
 (async () => {
     const profileData = await feactProfileData()
     updateProfileData(profileData)
     // updateProfileSkill(profileData)
     updateProfileSoftSkill(profileData)
     updateProfileEducation(profileData)
+    updateProfilePortfolio(profileData)
 })()

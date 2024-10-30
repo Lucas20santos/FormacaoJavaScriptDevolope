@@ -38,6 +38,11 @@
     ],
     "portfolio": [
       {
+        "name": "Meu github",
+        "url": "https://github.com/Lucas20santos",
+        "github": true
+      },
+      {
         "name": "Criação de uma Pokedex",
         "url": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto1",
         "github": true
