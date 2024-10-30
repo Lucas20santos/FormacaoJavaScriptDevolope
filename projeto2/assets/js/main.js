@@ -28,21 +28,52 @@ function updateProfileSkill(profileData)
     const skills = document.getElementById("profile.skills")
     const arrayOfSkills = profileData.skills.hardSkills
 
-    for (let index = 0; index < arrayOfSkills.length; index++) {
+    for (let index = 0; index < arrayOfSkills.length; index++) 
+    {
         const element = arrayOfSkills[index];
         
         skills.innerHTML += `
         <li>
-            <img src="${element.logo}?raw=true" alt="${element.name}" title="${element.name}">
+            <img src='https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/python.png?raw=true' alt="${element.name}" title="${element.name}">
         </li>
         `
-        console.log(element.logo + "?raw=true")
     }
 }
 
+function updateProfileSoftSkill(profileData)
+{
+    const softSkills = document.getElementById("profile.hardSkills")
+    const arrayOfSkills = profileData.skills.softSkills
+
+    for (let index = 0; index < arrayOfSkills.length; index++) 
+    {
+        const element = arrayOfSkills[index];
+        
+        softSkills.innerHTML += `
+        <li>${element}</li>
+        `
+    }
+}
+
+function updateProfileEducation(profileData)
+{
+    const education = document.getElementById("profile.Languages")
+    const arrayOfEducation = profileData.languages
+
+    for (let index = 0; index < arrayOfEducation.length; index++) 
+    {
+        const element = arrayOfEducation[index];
+        
+        education.innerHTML += `
+        <li>${element}</li>
+        `
+    }
+}
 
 (async () => {
     const profileData = await feactProfileData()
     updateProfileData(profileData)
-    updateProfileSkill(profileData)
+    // updateProfileSkill(profileData)
+    updateProfileSoftSkill(profileData)
+    updateProfileEducation(profileData)
 })()
