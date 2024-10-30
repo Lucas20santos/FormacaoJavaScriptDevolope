@@ -106,6 +106,14 @@ function updateProfileMyExperience(profileData)
 
 }
 
+function logoDio()
+{
+    const logoDio = document.getElementById("logo-dio")
+    logoDio.src = "https://raw.githubusercontent.com/Lucas20santos/FormacaoJavaScriptDevolope/ef26a74056156a679ce41033864b61e02b93629a/projeto2/assets/img/dio.svg"
+    logoDio.alt = "logo da DIO"
+    logoDio.title = "Logo da DIO"
+}
+
 (async () => 
 {
     const profileData = await feactProfileData()
@@ -116,4 +124,5 @@ function updateProfileMyExperience(profileData)
     updateProfileEducation(profileData)
     updateProfilePortfolio(profileData)
     updateProfileMyExperience(profileData)
+    logoDio()
 })()
