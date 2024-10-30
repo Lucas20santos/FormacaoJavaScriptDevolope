@@ -87,11 +87,19 @@ function updateProfilePortfolio(profileData)
     }
 }
 
-(async () => {
+function updateProfileMyExperience(profileData)
+{
+    
+}
+
+(async () => 
+{
     const profileData = await feactProfileData()
+
     updateProfileData(profileData)
-    // updateProfileSkill(profileData)
+    updateProfileSkill(profileData)
     updateProfileSoftSkill(profileData)
     updateProfileEducation(profileData)
     updateProfilePortfolio(profileData)
+    // updateProfileMyExperience(profileData)
 })()

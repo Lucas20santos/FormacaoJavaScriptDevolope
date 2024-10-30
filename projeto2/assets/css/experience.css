@@ -31,26 +31,9 @@
     background-image: url("../img/calendar.svg");
     margin-right: .5rem;
 }
-.projeto
+
+.experience li .descricao
 {
     display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.projeto span
-{
-    display: flex;
-    font-weight: 700;
     font-size: 1.125rem;
-}
-.projeto li
-{
-    margin: 0 1rem;
-}
-.projeto li img
-{
-    width: 3rem;
-    height: 3rem;
 }
