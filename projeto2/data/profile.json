@@ -9,19 +9,19 @@
       "hardSkills": [
         {
           "name": "Python",
-          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/python.png"
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/blob/main/projeto2/assets/img/python.png?raw=true"
         },
         {
           "name": "CSS",
-          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/css.png"
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/css.png?raw=true"
         },
         {
           "name": "React",
-          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/react.png"
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/react.png?raw=true"
         },
         {
           "name": "Html",
-          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/html.png"
+          "logo": "https://github.com/Lucas20santos/FormacaoJavaScriptDevolope/tree/main/projeto2/assets/img/html.png?raw=true"
         }
       ],
       "softSkills": [

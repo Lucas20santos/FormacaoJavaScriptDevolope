@@ -30,15 +30,14 @@ function updateProfileSkill(profileData)
 
     for (let index = 0; index < arrayOfSkills.length; index++) {
         const element = arrayOfSkills[index];
-        console.log(element.logo)
-        // skills.innerHTML += `
-    //     <li>
-    //         <img src="${element.logo}" alt="${profileData.skills.hardSkills.name}" title="HTML">
-    //     </li>
-    // `
+        
+        skills.innerHTML += `
+        <li>
+            <img src="${element.logo}?raw=true" alt="${element.name}" title="${element.name}">
+        </li>
+        `
+        console.log(element.logo + "?raw=true")
     }
-
-    console.log(profileData.skills.hardSkills)
 }
 
 
